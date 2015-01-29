@@ -8,3 +8,8 @@ Syntax highlighting for ul4.
 
 	cd ~/Library/Application Support/Avian/Bundles/
 	git clone git@github.com:LivingLogic/ul4.tmbundle.git ul4.tmbundle
+
+#### Sublime Text 3
+
+	~/Library/Application Support/Sublime Text 3/Packages/
+	git clone git@github.com:LivingLogic/ul4.tmbundle.git ul4.tmbundle
