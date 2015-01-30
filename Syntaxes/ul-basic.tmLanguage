@@ -143,7 +143,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(&lt;\?)\s*(end)\s+(for|if|def)?\s*(\?&gt;)</string>
+			<string>(&lt;\?)\s*(end)\s+(for|while|if|def)?\s*(\?&gt;)</string>
 			<key>name</key>
 			<string>meta.function.inline.other.ul4</string>
 		</dict>
