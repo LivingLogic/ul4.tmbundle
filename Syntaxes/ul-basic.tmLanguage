@@ -327,7 +327,7 @@
 		<key>function</key>
 		<dict>
 			<key>match</key>
-			<string>(abs|all|any|asjson|asul4on|bin|bool|ceil|chr|cos|csv|date|enumerate|enumfl|exp|first|float|floor|format|fromjson|fromul4on|hex|hls|hsv|int|isbool|iscolor|isdate|isdefined|isdict|isfirst|isfirstlast|isfloat|isfunction|isint|islast|islist|ismonthdelta|isnone|isset|isstr|istemplate|istimedelta|isundefined|last|len|list|log|max|min|monthdelta|now|oct|ord|pi|pow|print|printx|randchoice|random|randrange|range|repr|reversed|rgb|round|set|sin|slice|sorted|sqrt|str|sum|tan|tau|timedelta|type|urlquote|urlunquote|utcnow|xmlescape|zip)</string>
+			<string>\b(abs|all|any|asjson|asul4on|bin|bool|ceil|chr|cos|csv|date|enumerate|enumfl|exp|first|float|floor|format|fromjson|fromul4on|hex|hls|hsv|int|isbool|iscolor|isdate|isdefined|isdict|isfirst|isfirstlast|isfloat|isfunction|isint|islast|islist|ismonthdelta|isnone|isset|isstr|istemplate|istimedelta|isundefined|last|len|list|log|max|min|monthdelta|now|oct|ord|pi|pow|print|printx|randchoice|random|randrange|range|repr|reversed|rgb|round|set|sin|slice|sorted|sqrt|str|sum|tan|tau|timedelta|type|urlquote|urlunquote|utcnow|xmlescape|zip)\b</string>
 			<key>name</key>
 			<string>support.function.ul4</string>
 		</dict>
@@ -369,7 +369,7 @@
 		<key>method</key>
 		<dict>
 			<key>match</key>
-			<string>(add|append|capitalize|day|days|endswith|find|get|hour|insert|isoformat|items|join|lower|lstrip|microsecond|microseconds|mimeformat|minute|month|pop|replace|rfind|rsplit|rstrip|second|seconds|split|startswith|strip|update|upper|values|week|weekday|year|yearday)</string>
+			<string>\b(add|append|capitalize|day|days|endswith|find|get|hour|insert|isoformat|items|join|lower|lstrip|microsecond|microseconds|mimeformat|minute|month|pop|replace|rfind|rsplit|rstrip|second|seconds|split|startswith|strip|update|upper|values|week|weekday|year|yearday)\b</string>
 			<key>name</key>
 			<string>support.other.method.ul4</string>
 		</dict>
@@ -493,7 +493,7 @@
 					<key>match</key>
 					<string>\\\\</string>
 					<key>name</key>
-					<string>constant.character.escape.backlash.ul4</string>
+					<string>constant.character.escape.backslash.ul4</string>
 				</dict>
 			</array>
 		</dict>
