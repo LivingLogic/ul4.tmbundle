@@ -44,7 +44,7 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#tag-stuff</string>
+					<string>#code</string>
 				</dict>
 			</array>
 		</dict>
@@ -85,6 +85,76 @@
 	</array>
 	<key>repository</key>
 	<dict>
+		<key>code</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#tag-function-name</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#operator</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#keyword</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#function</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#method</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#float</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#integer-dec</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#integer-hex</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#integer-oct</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#integer-bin</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#color</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#date</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#constant</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#name</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#string-double-quoted</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#string-single-quoted</string>
+				</dict>
+			</array>
+		</dict>
 		<key>color</key>
 		<dict>
 			<key>match</key>
@@ -185,7 +255,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.begin.html</string>
+					<string>punctuation.definition.string.begin.ul4</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -195,20 +265,94 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.string.end.html</string>
+					<string>punctuation.definition.string.end.ul4</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>string.quoted.double.html</string>
+			<string>string.quoted.double.ul4</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#embedded-code</string>
+					<string>#string-escape</string>
+				</dict>
+			</array>
+		</dict>
+		<key>string-escape</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\\x[0-9a-fA-F]{2}</string>
+					<key>name</key>
+					<string>constant.character.escape.8bit.ul4</string>
 				</dict>
 				<dict>
-					<key>include</key>
-					<string>#entities</string>
+					<key>match</key>
+					<string>\\u[0-9a-fA-F]{4}</string>
+					<key>name</key>
+					<string>constant.character.escape.16bit.ul4</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\\U[0-9a-fA-F]{8}</string>
+					<key>name</key>
+					<string>constant.character.escape.32bit.ul4</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\\\a</string>
+					<key>name</key>
+					<string>constant.character.escape.bell.ul4</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\\\b</string>
+					<key>name</key>
+					<string>constant.character.escape.backspace.ul4</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\\\t</string>
+					<key>name</key>
+					<string>constant.character.escape.tab.ul4</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\\\n</string>
+					<key>name</key>
+					<string>constant.character.escape.newline.ul4</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\\\f</string>
+					<key>name</key>
+					<string>constant.character.escape.formfeed.ul4</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\\\r</string>
+					<key>name</key>
+					<string>constant.character.escape.return.ul4</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\\"</string>
+					<key>name</key>
+					<string>constant.character.escape.double-quote.ul4</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\'</string>
+					<key>name</key>
+					<string>constant.character.escape.single-quote.ul4</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\\\\</string>
+					<key>name</key>
+					<string>constant.character.escape.backlash.ul4</string>
 				</dict>
 			</array>
 		</dict>
@@ -240,81 +384,7 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#embedded-code</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#entities</string>
-				</dict>
-			</array>
-		</dict>
-		<key>tag-stuff</key>
-		<dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#tag-function-name</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#operator</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#keyword</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#function</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#method</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#float</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#integer-dec</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#integer-hex</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#integer-oct</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#integer-bin</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#color</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#date</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#constant</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#name</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#string-double-quoted</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#string-single-quoted</string>
+					<string>#string-escape</string>
 				</dict>
 			</array>
 		</dict>
