@@ -66,6 +66,11 @@
 					<key>name</key>
 					<string>support.constant.ul4</string>
 				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.end.ul4</string>
+				</dict>
 			</dict>
 			<key>match</key>
 			<string>(&lt;\?)\s*(whitespace)\s+(keep|strip|smart)\s*(\?&gt;)</string>
