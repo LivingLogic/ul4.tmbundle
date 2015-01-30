@@ -89,12 +89,33 @@
 			<key>name</key>
 			<string>constant.numeric.float.ul4</string>
 		</dict>
-		<key>integer</key>
+		<key>integer-bin</key>
 		<dict>
 			<key>match</key>
-			<string>\b([0-9]+|0[xX][0-9a-fA-F]+|0[oO][0-7]+|0[bB][01]+)\b</string>
+			<string>\b(?i:0b[01]+)\b</string>
 			<key>name</key>
-			<string>constant.numeric.integer.ul4</string>
+			<string>constant.numeric.integer.binary.ul4</string>
+		</dict>
+		<key>integer-dec</key>
+		<dict>
+			<key>match</key>
+			<string>\b[0-9]+\b</string>
+			<key>name</key>
+			<string>constant.numeric.integer.decimal.ul4</string>
+		</dict>
+		<key>integer-hex</key>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:0x[0-9a-f]+)\b</string>
+			<key>name</key>
+			<string>constant.numeric.integer.hexadecimal.ul4</string>
+		</dict>
+		<key>integer-oct</key>
+		<dict>
+			<key>match</key>
+			<string>\b(?i:0o[0-7]+)\b</string>
+			<key>name</key>
+			<string>constant.numeric.integer.octal.ul4</string>
 		</dict>
 		<key>keyword</key>
 		<dict>
@@ -310,7 +331,19 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#integer</string>
+					<string>#integer-dec</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#integer-hex</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#integer-oct</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#integer-bin</string>
 				</dict>
 				<dict>
 					<key>include</key>
