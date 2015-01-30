@@ -14,7 +14,7 @@
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>(&lt;\?)\s*(ul4|for|while|if|elif|else|def|break|continue|return|code|printx?)\b</string>
+			<string>(&lt;\?)\s*(ul4|for|while|if|elif|else|break|continue|return|code|printx?)\b</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -76,6 +76,47 @@
 			<string>(&lt;\?)\s*(whitespace)\s+(keep|strip|smart)\s*(\?&gt;)</string>
 			<key>name</key>
 			<string>meta.function.inline.other.ul4</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>(&lt;\?)\s*(def)\s+([a-zA-Z_][a-zA-Z0-9_]*)\b</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.begin.ul4</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.ul4</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>variable.ul4</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(\?&gt;)</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.tag.end.ul4</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.function.inline.template.ul4</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#code</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>captures</key>
