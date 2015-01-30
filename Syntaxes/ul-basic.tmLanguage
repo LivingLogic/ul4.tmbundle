@@ -108,7 +108,7 @@
 			<key>match</key>
 			<string>\b([a-zA-Z\_][a-zA-Z\_0-9]*)</string>
 			<key>name</key>
-			<string>entity.other.attribute-name.html</string>
+			<string>variable.ul4</string>
 		</dict>
 		<key>operator</key>
 		<dict>
