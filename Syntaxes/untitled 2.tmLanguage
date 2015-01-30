@@ -75,7 +75,7 @@
 		<key>float</key>
 		<dict>
 			<key>match</key>
-			<string>\b([0-9]+\.[0-9]*([eE][+-]?[0-9]+)?|\.[0-9]+([eE][+-]?[0-9]+)?|[0-9]+[eE][+-]?[0-9]+)\b</string>
+			<string>[+-]?(?=\d*[.eE])(?=\.?\d)\d*\.?\d*(?:[eE][+-]?\d+)?\b</string>
 			<key>name</key>
 			<string>constant.numeric.float.ul4</string>
 		</dict>
@@ -103,7 +103,7 @@
 		<key>operator</key>
 		<dict>
 			<key>match</key>
-			<string>\+=|-=|\*=|\/\/=|\/=|%=|&lt;&lt;=|&gt;&gt;=|&amp;=|\^=|\|=|:|\.|\*\*|\*|=|\-|\+|\/\/|\/|%|&lt;&lt;|&gt;&gt;|&amp;|\^|\||==|!=|&lt;=|&lt;|&gt;=|&gt;</string>
+			<string>\b(\+=|-=|\*=|\/\/=|\/=|%=|&lt;&lt;=|&gt;&gt;=|&amp;=|\^=|\|=|:|\.|\*\*|\*|=|\-|\+|\/\/|\/|%|&lt;&lt;|&gt;&gt;|&amp;|\^|\||==|!=|&lt;=|&lt;|&gt;=|&gt;)\b</string>
 			<key>name</key>
 			<string>keyword.operator.ul4</string>
 		</dict>
