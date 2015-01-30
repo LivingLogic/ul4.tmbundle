@@ -5,15 +5,11 @@
 	<key>name</key>
 	<string>Symbol List</string>
 	<key>scope</key>
-	<string>source.ul4 meta.function.inline.template.ul4</string>
+	<string>source.ul4 meta.function.inline.template.ul4 variable.other.def.ul4</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>
 		<integer>1</integer>
-		<key>symbolTransformation</key>
-		<string>
-		s/&lt;\?\s*def\s+([a-zA-Z_][a-zA-Z0-9_]*)\b/$1/g;
-	</string>
 	</dict>
 	<key>uuid</key>
 	<string>0D256593-7FAE-410F-AB1C-9AF4B8EAA31E</string>
