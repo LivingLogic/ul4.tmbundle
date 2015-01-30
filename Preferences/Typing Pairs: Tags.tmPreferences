@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Typing Pairs: Tags</string>
+	<key>scope</key>
+	<string>source.ul4 - meta.function</string>
+	<key>settings</key>
+	<dict>
+		<key>smartTypingPairs</key>
+		<array>
+			<array>
+				<string>&lt;</string>
+				<string>&gt;</string>
+			</array>
+			<array>
+				<string>?</string>
+				<string>?</string>
+			</array>
+		</array>
+		<key>spellChecking</key>
+		<string>0</string>
+	</dict>
+	<key>uuid</key>
+	<string>3E71E7EB-2CC9-4326-9D6D-7F710400A3A9</string>
+</dict>
+</plist>
