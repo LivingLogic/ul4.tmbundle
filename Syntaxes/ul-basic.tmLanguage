@@ -364,7 +364,7 @@
 			<key>match</key>
 			<string>\b(for|in|not|and|or|if|else)\b</string>
 			<key>name</key>
-			<string>keyword.ul4</string>
+			<string>keyword.operator.$1.ul4</string>
 		</dict>
 		<key>method</key>
 		<dict>
