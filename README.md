@@ -6,6 +6,7 @@ Syntax highlighting for UL4.
 
 #### TextMate
 
+	mkdir -p  ~/Library/Application\ Support/Avian/Bundles/
 	cd ~/Library/Application\ Support/Avian/Bundles/
 	git clone git@github.com:LivingLogic/ul4.tmbundle.git ul4.tmbundle
 
